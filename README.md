@@ -51,10 +51,8 @@ source install/setup.bash
 
 Run Simulation
 Launch UR5 in Gazebo
-ros2 launch ur_simulation_gazebo ur_sim_control.launch.py ur_type:=ur5
+ros2 launch ur_simulation_gazebo ur_sim_moveit.launch.py ur_type:=ur5
 
-Launch MoveIt
-ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur5 use_sim_time:=true
 
 Run Pick and Place Node
 ros2 run pick_place_cpp pick_place
